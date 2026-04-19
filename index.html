@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Tier 4+ Off-Road Exhaust Evaluation | VetFleet</title>
+  <meta name="description" content="Free Tier 4 and Tier 4+ off-road exhaust evaluation for the first 50 eligible diesel units over 150 horsepower. Other equipment quoted first.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1f3c;
+      color: #fff;
+      line-height: 1.55;
+    }
+    a { color: #f5a623; text-decoration: none; }
+    .shell {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      background: #0d1f3c;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: rgba(7, 21, 41, 0.96);
+      border-bottom: 1px solid #1a2e4a;
+      backdrop-filter: blur(8px);
+    }
+    .topbar-copy {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: #89a8d0;
+    }
+    .topbar-call {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 6px;
+      background: #f5a623;
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .hero {
+      padding: 22px 16px 18px;
+    }
+    .hero-card,
+    .section-card,
+    .form-card,
+    .footer-card {
+      background: #071529;
+      border: 1px solid #1a2e4a;
+      border-radius: 6px;
+    }
+    .hero-card {
+      padding: 22px 18px 18px;
+    }
+    .logo {
+      width: 110px;
+      height: 110px;
+      display: block;
+      margin: 0 auto 16px;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+    }
+    .eyebrow,
+    .section-label {
+      margin: 0 0 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #f5a623;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-family: Arial Black, Arial, sans-serif;
+      font-size: 34px;
+      line-height: 1.02;
+    }
+    .hero-copy {
+      margin: 0 0 16px;
+      font-size: 16px;
+      color: #a7beda;
+    }
+    .offer {
+      margin: 0 0 16px;
+      padding: 14px;
+      border-radius: 6px;
+      background: #f5a623;
+      color: #000;
+    }
+    .offer strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+    .offer span {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .bullet-list {
+      display: grid;
+      gap: 10px;
+      margin: 0 0 18px;
+    }
+    .bullet {
+      padding: 12px 14px;
+      border-radius: 6px;
+      background: #0d1f3c;
+      border: 1px solid #1a2e4a;
+      font-size: 14px;
+      color: #c2d3e7;
+    }
+    .hero-actions {
+      display: grid;
+      gap: 10px;
+    }
+    .btn-primary,
+    .btn-secondary,
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 18px;
+      border: none;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-primary,
+    .btn-submit {
+      background: #f5a623;
+      color: #000;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #f5a623;
+      border: 1px solid #f5a623;
+    }
+    .section {
+      padding: 0 16px 16px;
+    }
+    .section-card {
+      padding: 18px;
+    }
+    .mini-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .mini {
+      padding: 12px 14px;
+      border-radius: 6px;
+      background: #0d1f3c;
+      border: 1px solid #1a2e4a;
+    }
+    .mini strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+      color: #fff;
+    }
+    .mini span {
+      font-size: 13px;
+      color: #95b0cf;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #f5a623;
+      color: #f5a623;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .form-wrap {
+      padding: 0 16px 20px;
+    }
+    .form-card {
+      padding: 18px;
+    }
+    .form-intro {
+      margin: 0 0 16px;
+      font-size: 15px;
+      color: #9fb9d8;
+    }
+    .form-grid {
+      display: grid;
+      gap: 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #7ea3d3;
+    }
+    input,
+    select {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid #1a2e4a;
+      border-radius: 6px;
+      background: #0d1a2d;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+    input:focus,
+    select:focus {
+      border-color: #f5a623;
+    }
+    .form-note {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: #7f98b7;
+      text-align: center;
+    }
+    .footer {
+      padding: 0 16px 22px;
+    }
+    .footer-card {
+      padding: 18px;
+      text-align: center;
+    }
+    .footer-logo {
+      width: 96px;
+      height: 96px;
+      display: block;
+      margin: 0 auto 14px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .footer-title {
+      margin: 0 0 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #89a8d0;
+    }
+    .footer-links,
+    .footer-copy {
+      margin: 0;
+      font-size: 13px;
+      color: #9fb9d8;
+    }
+    .footer-links a {
+      color: #f5a623;
+    }
+    .footer-meta {
+      margin: 10px 0 0;
+      font-size: 11px;
+      color: #6f89aa;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div class="topbar-copy">Tier 4 / Tier 4+<br>150+ HP · CA ARD 302636</div>
+      <a class="topbar-call" href="tel:+15622466036">(562) 246-6036</a>
+    </div>
+
+    <section class="hero">
+      <div class="hero-card">
+        <img src="logo.png" alt="Veteran Fleet Technologies logo" class="logo">
+        <p class="eyebrow">Free Tier 4+ Evaluation</p>
+        <h1>Free off-road exhaust checks for the first 50 eligible units.</h1>
+        <p class="hero-copy">Tier 4 and Tier 4+ off-road diesel equipment over 150 horsepower qualifies for the free bucket. Everything else gets quoted first.</p>
+        <div class="offer">
+          <strong>We come to your yard, confirm eligibility, and document the issue fast.</strong>
+          <span>No disassembly. Written findings. Call-back within one business day.</span>
+        </div>
+        <div class="bullet-list">
+          <div class="bullet">Tier 4 / Tier 4+ off-road diesel, 150+ HP</div>
+          <div class="bullet">First 50 eligible units free</div>
+          <div class="bullet">Other equipment classes quoted first</div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#lead-form">Claim a free slot</a>
+          <a class="btn-secondary" href="tel:+15622466036">Call Marcos now</a>
+          <a class="btn-secondary" href="Leak Check Flyer (7).pdf" target="_blank" rel="noopener">Open flyer PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <p class="section-label">What You Get</p>
+        <div class="mini-grid">
+          <div class="mini">
+            <strong>Field evaluation</strong>
+            <span>Sniffer-based exhaust check on eligible units at your site.</span>
+          </div>
+          <div class="mini">
+            <strong>Clear next steps</strong>
+            <span>Written findings, likely cause, and whether paid follow-up is needed.</span>
+          </div>
+          <div class="mini">
+            <strong>Fast screening</strong>
+            <span>Good fit for excavators, loaders, dozers, graders, generators, and similar off-road diesel equipment.</span>
+          </div>
+        </div>
+        <div class="chips">
+          <span class="chip">Excavators</span>
+          <span class="chip">Wheel Loaders</span>
+          <span class="chip">Dozers</span>
+          <span class="chip">Graders</span>
+          <span class="chip">Generators</span>
+          <span class="chip">Compressors</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-wrap" id="lead-form">
+      <div class="form-card">
+        <p class="section-label">Lead Form</p>
+        <p class="form-intro">Send the details and Marcos will confirm whether your units are in the free Tier 4+ bucket or need a quote.</p>
+        <form action="https://formsubmit.co/marcos@vetfleet.com" method="POST" id="vetfleet-mobile-form">
+          <input type="hidden" name="_subject" value="VetFleet GitHub Pages Lead - Tier 4+ Mobile">
+          <input type="hidden" name="_next" value="https://aztectech82-cell.github.io/vetfleet-sniffer-page/thanks/">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" id="exact_form_url">
+          <input type="hidden" name="submitted_at" id="submitted_at">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-grid">
+            <div>
+              <label for="name">Your Name *</label>
+              <input id="name" name="name" type="text" placeholder="Fleet manager or owner" required>
+            </div>
+            <div>
+              <label for="company">Company *</label>
+              <input id="company" name="company" type="text" placeholder="Business name" required>
+            </div>
+            <div>
+              <label for="city">City *</label>
+              <input id="city" name="city" type="text" placeholder="Where the equipment is" required>
+            </div>
+            <div>
+              <label for="units">Eligible Units *</label>
+              <select id="units" name="eligible_units" required>
+                <option value="" disabled selected>Select unit count</option>
+                <option value="1-5">1-5 units</option>
+                <option value="6-15">6-15 units</option>
+                <option value="16-30">16-30 units</option>
+                <option value="31-50">31-50 units</option>
+                <option value="50+">50+ units</option>
+              </select>
+            </div>
+            <div>
+              <label for="equipment_class">Equipment Class *</label>
+              <select id="equipment_class" name="equipment_class" required>
+                <option value="" disabled selected>Select equipment class</option>
+                <option value="Tier 4 / Tier 4+ off-road diesel, 150+ HP">Tier 4 / Tier 4+ off-road diesel, 150+ HP</option>
+                <option value="Not sure - please confirm">Not sure - please confirm</option>
+                <option value="Other equipment - request price">Other equipment - request price</option>
+              </select>
+            </div>
+            <div>
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" placeholder="Best callback number" required>
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="Best email for the quote" required>
+            </div>
+            <div>
+              <label for="call_time">Best Time to Call</label>
+              <select id="call_time" name="best_time_to_call">
+                <option value="" disabled selected>Pick a time</option>
+                <option value="Morning (7-10 AM)">Morning (7-10 AM)</option>
+                <option value="Midday (10 AM-2 PM)">Midday (10 AM-2 PM)</option>
+                <option value="Afternoon (2-5 PM)">Afternoon (2-5 PM)</option>
+              </select>
+            </div>
+            <div>
+              <label for="source">How Did You Hear About Us? *</label>
+              <select id="source" name="source" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Email outreach">Email outreach</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Google search">Google search</option>
+                <option value="Referral">Referral</option>
+                <option value="Cold call">Cold call</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button class="btn-submit" type="submit" id="submit-button">Send my info</button>
+            <p class="form-note">First FormSubmit submission will ask Marcos to confirm the email destination once. After that, leads go straight through to marcos@vetfleet.com.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-card">
+        <img src="logo.png" alt="Veteran Fleet Technologies logo" class="footer-logo">
+        <p class="footer-title">Veteran Fleet Technologies, LLC</p>
+        <p class="footer-links">
+          <a href="mailto:marcos@vetfleet.com">marcos@vetfleet.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://linkedin.com/in/marcoshalvarez">LinkedIn</a>
+          &nbsp;·&nbsp;
+          <a href="https://vetfleet.com">vetfleet.com</a>
+        </p>
+        <p class="footer-meta">CARB HD I/M Licensed Tester · CA ARD 302636 · ASE Certified A2/A4/A5/A6/A7/A8 · CE-CERT / UC Riverside</p>
+        <p class="footer-copy">Riverside, CA · (562) 246-6036</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const form = document.getElementById("vetfleet-mobile-form");
+      const urlField = document.getElementById("exact_form_url");
+      const submittedAt = document.getElementById("submitted_at");
+      const submitButton = document.getElementById("submit-button");
+
+      if (urlField) {
+        urlField.value = window.location.href;
+      }
+
+      if (!form) {
+        return;
+      }
+
+      form.addEventListener("submit", function() {
+        if (submittedAt) {
+          submittedAt.value = new Date().toISOString();
+        }
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Submitting...";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
